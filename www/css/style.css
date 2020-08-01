@@ -1,0 +1,10 @@
+.header {
+	background-image: url(../images/header.jpg) !important;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+.logo {
+	max-height: 250px;
+}
