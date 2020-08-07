@@ -1,3 +1,11 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	color: #666;
+}
+
 .header {
 	background-image: url(../images/header.jpg) !important;
 	background-repeat: no-repeat;
@@ -7,4 +15,27 @@
 
 .logo {
 	max-height: 250px;
+}
+
+nav ul {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+	nav ul {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	nav li {
+		list-style: none;
+	}
+}
+nav a {
+	display: block;
+	font-weight: bold;
 }
