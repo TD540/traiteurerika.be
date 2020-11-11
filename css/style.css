@@ -1,10 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+	margin: 0;
+	/* font-family: 'Quicksand', sans-serif; */
+	font-family: 'Lora', serif;
+}
+
 .header {
+	background-color: black;
+	position: relative;
+	overflow: hidden;
+}
+
+.header-bg {
+	content: "";
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
 	background-image: url(../images/header.jpg) !important;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+	opacity: 0.5;
+}
+
+header h1 {
+	margin: 0;
+	position: relative;
+	z-index: 1;
 }
 
 .logo {
-	max-height: 250px;
+	display: block;
+	margin: 30px auto;
+	max-height: 200px;
+}
+
+@media (min-height: 415px) {
+	.logo {
+		width: auto;
+		max-width: 310px;
+		max-height: none;
+	}
+}
+
+a {
+	color: #FC0228;
+}
+
+img {
+	max-width: 100%;
+}
+
+a:hover {
+	color: #C00322;
+}
+
+main {
+	margin: 32px auto;
+	padding: 0 16px;
+	max-width: 768px;
+}
+
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 8px;
+}
+
+nav li {
+	margin-bottom: 2px;
+}
+
+nav a {
+	display: block;
+	color: #111;
+	text-decoration: none;
+	border-bottom: solid rgba(0, 0, 0, 0.05);
+	padding: 4px 8px;
+}
+
+nav a.active {
+	border-bottom-color: #333;
+}
+
+@media (min-width: 415px) {
+	nav {
+		top: -20px;
+		position: relative;
+	}
+	nav ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	nav li {
+		margin: 0 8px;
+	}
+	nav a {
+		background-color: white;
+		padding: 16px 8px;
+	}
+}
+
+@media (min-width: 992px) {
+	nav ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	nav ul {
+		font-size: 1.3rem;
+	}
 }
